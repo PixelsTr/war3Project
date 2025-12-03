@@ -11,23 +11,39 @@
 - 角色释放技能后 触发
 
 # AI BOSS
+
 # 沙盒 开放世界
+
 # 装备系统（材料合成）（特殊装备）
+
 # 技能系统（同上）
-# 
 
+#
 
-# 入侵式 不死族 
-
+# 入侵式 不死族
 
 # 1.MAP
- * 传奇 | Terraria | D3 | POE2 | 冒险岛v5/v6 
- * 30-45min
+
+- 传奇 | Terraria | D3 | POE2 | 冒险岛 v5/v6
+- 30-45min
 
 # 2.Build
- * 装备、技能流派
 
+- 装备、技能流派
 
 # Dilaog
 
-# CUSTOM UNIT , CUSTOM HERO , CUSTOM DIALOG , 
+# CUSTOM UNIT , CUSTOM HERO , CUSTOM DIALOG ,
+
+# 沙盒 
+- 主动: 传统防守
+- 被动：限时召唤
+- 沙盒：仅加强怪物（随时间），什么时间结束由玩家决定 
+
+# 素材
+- War3重置版
+- 
+
+
+# 系统
+- 伤害文字 
