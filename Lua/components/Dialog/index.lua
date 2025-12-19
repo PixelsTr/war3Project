@@ -3,15 +3,15 @@
 Dialog = {}
 
 -- 存储所有已创建的对话框及其回调函数
-local DialogRegistry = {} 
+local DialogRegistry = {}
 
 -- 组件初始化（只运行一次）
 function Dialog.Init()
     local t = CreateTrigger()
-    
+
     -- 监听所有玩家的对话框事件
-    TriggerRegisterDialogEvent(t, nil) 
-    
+    TriggerRegisterDialogEvent(t, nil)
+
     -- 所有对话框的点击都导向 HandleClick 函数
     TriggerAddAction(t, Dialog.HandleClick)
 end
@@ -28,13 +28,13 @@ end
 function Dialog.Create(owner, title, callback)
     local d = CreateDialog()
     DialogSetTitle(d, title)
-    
+
     -- 将对话框对象和回调函数注册到全局表中
     DialogRegistry[d] = {
         owner = owner,
         callback = callback
     }
-    
+
     return d
 end
 
@@ -59,15 +59,19 @@ end
 function Dialog.HandleClick()
     local clickedDialog = GetTriggerDialog()
     local clickedButton = GetClickedButton()
-    
+
     local entry = DialogRegistry[clickedDialog]
-    
+
     if entry and entry.callback then
         -- 调用创建该对话框时传入的回调函数
         entry.callback(entry.owner, clickedButton)
     end
-    
+
     return true
 end
 
 return Dialog
+
+-- dialog(UI)
+-- hero(卡片三选一 OR 酒馆招募)
+-- 区域刷怪、任务对话、属性系统
